@@ -1,0 +1,37 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aqua;
+  height: 50px;
+  
+}
+
+body {
+  margin: 0px 0px;
+  height: 100%;
+  background-color: khaki;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.inserir {
+  min-width: 30% ;
+  min-height: 100%;
+}
+
+.lista {
+  background-color: grey;
+  min-width: 40% ;
+  
+}
+
+.terminados {
+  background-color: indigo;
+  min-width: 30%;
+  min-height: 100%;
+}
