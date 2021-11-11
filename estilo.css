@@ -2,36 +2,38 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: aqua;
-  height: 50px;
-  
+  background-color: #3d5467;
+  height: 5vh;
 }
 
 body {
   margin: 0px 0px;
-  height: 100%;
-  background-color: khaki;
 }
 
-main {
+.content {
   display: flex;
-  width: 100%;
-  height: 100%;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-.inserir {
-  min-width: 30% ;
-  min-height: 100%;
+.mainContent {
+  display: flex;
+  height: 95vh;
+  align-items: stretch;
 }
 
-.lista {
-  background-color: grey;
-  min-width: 40% ;
-  
+.leftDiv {
+  flex: 1;
+  background-color: #8aa29e;
 }
 
-.terminados {
-  background-color: indigo;
-  min-width: 30%;
-  min-height: 100%;
+.middleDiv {
+  display: flex;
+  flex: 3;
+  background-color: #F1EDEE;
+}
+
+.textBigHeight {
+  margin-top: 8px;
+  resize: none;
 }

@@ -1,15 +1,21 @@
-function main (){
-  const botao = document.querySelector('#butaozimTop');
-  const listinha = document.querySelector('#listinhaTop');
-  const campoTexto = document.querySelector('#campoTexto');
+const button = document.querySelector("#createButton");
 
-  botao.addEventListener ('click', () => {
-    let item = document.createElement('li');
-    let texto = campoTexto.value;
-    item.innerHTML = texto;
-    listinha.appendChild(item);
-    campoTexto.value = '';
+
+function main (){
+  button.addEventListener('click', () => {
+    createToDo()
   });
+}
+
+function createToDo (){
+  //Pegar valores dos campos
+  let title = document.getElementById('titleInput');
+  let description = document.getElementById('descriptionInput');
+  //Criar um ToDo com os valores pegos do campo
+  //const toDo = new ToDo(title.value, description.value)
+  //limpar campo
+  title.value = '';
+  description.value = '';
 }
 
 main();
